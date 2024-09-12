@@ -4,9 +4,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,8 +43,6 @@ code {
     transform: translateY(0);
   }
 }
-/* Existing styles */
-/* Existing styles */
 
 /* Dark Blue Fantasy Background */
 .dark-blue-fantasy-bg {
@@ -64,18 +60,6 @@ code {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-/* Slide In Animation */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -121,9 +105,6 @@ code {
 .neuralink-border {
   animation: popIn 0.5s ease-out forwards;
 }
-
-
-/* Existing styles */
 
 @keyframes pulse {
   0%, 100% {
@@ -186,19 +167,53 @@ h2 {
 
 .floating-cart {
   position: fixed;
-  bottom: 20px; /* Jarak dari bawah */
-  right: 20px; /* Jarak dari kanan */
-  width: 300px; /* Lebar keranjang */
-  background-color: white; /* Warna latar belakang */
-  border: 1px solid #ccc; /* Garis batas */
-  border-radius: 8px; /* Sudut melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
-  padding: 16px; /* Padding di dalam keranjang */
-  z-index: 1000; /* Pastikan di atas elemen lain */
-  transition: transform 0.3s ease; /* Animasi saat muncul */
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .floating-cart.hidden {
-  transform: translateY(100%); /* Sembunyikan keranjang */
+  transform: translateY(100%);
 }
 
+
+/* Portfolio specific styles */
+.portfolio-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-image-container {
+  overflow: hidden;
+}
+
+.portfolio-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-modal {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

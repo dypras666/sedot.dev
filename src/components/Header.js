@@ -54,6 +54,9 @@ const Header = () => {
             ) : (
               <>
 
+                <Link to="/about" className="mx-2 hover:text-blue-400 transition duration-300">About Me</Link>
+                <Link to="/portfolio" className="mx-2 hover:text-blue-400 transition duration-300">Portfolio</Link>
+                <Link to="/news" className="mx-2 hover:text-blue-400 transition duration-300">News</Link>
                 <Link to="/order" className="mx-2 hover:text-blue-400 transition duration-300">Order</Link>
                 {/* <Link to="/register" className="mx-2 hover:text-blue-400 transition duration-300">Register</Link>
                 <Link to="/login" className="mx-2 hover:text-blue-400 transition duration-300">Login</Link> */}
@@ -75,6 +78,7 @@ const Header = () => {
             </>
           ) : (
             <>
+              <Link to="/news" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>News</Link>
               <Link to="/order" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Order</Link>
               {/* <Link to="/register" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Register</Link>
               <Link to="/login" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Login</Link> */}

@@ -10,6 +10,9 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Order from './components/Order';
 import Profile from './components/Profile';
+import News from './components/News'; 
+import PortfolioPage from './components/PortfolioPage';
+import CVPage from './components/CvPage';
 
 export const AuthContext = createContext();
 
@@ -77,6 +80,10 @@ const App = () => {
                 <Profile />
               </ProtectedRoute>
             } />
+
+          <Route path="/about" element={<CVPage />} /> 
+          <Route path="/news" element={<News />} /> 
+          <Route path="/portfolio" element={<PortfolioPage />} /> 
           </Routes>
           <Footer />
         </div>
