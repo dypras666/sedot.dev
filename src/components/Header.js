@@ -78,6 +78,8 @@ const Header = () => {
             </>
           ) : (
             <>
+              <Link to="/about" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>About</Link>
+              <Link to="/portfolio" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Portfolio</Link>
               <Link to="/news" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>News</Link>
               <Link to="/order" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Order</Link>
               {/* <Link to="/register" className="block py-2 hover:text-blue-400 transition duration-300" onClick={toggleMenu}>Register</Link>
